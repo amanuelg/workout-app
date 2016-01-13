@@ -9,7 +9,7 @@ RSpec.feature "Signing In user" do
         visit "/"
         
         click_link "Log in"
-        fill_in "Email", with:"#{@jhon}"
+        fill_in "Email", with:"#{@jhon.email}"
         fill_in "Password", with:"password"
         click_button "Log in"
         
