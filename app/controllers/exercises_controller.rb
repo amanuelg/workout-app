@@ -25,6 +25,7 @@ class ExercisesController < ApplicationController
        end
     end
     
+    
     private
     
     def exercise_params
