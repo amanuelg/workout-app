@@ -12,7 +12,7 @@ RSpec.feature "User Sign out" do
         click_button "Log in"
     end
     
-    scenario "user signout" do
+    scenario "user sign out" do
         visit "/"
         click_link "Sign out"
         expect(page).to have_content("Signed out successfully.")
