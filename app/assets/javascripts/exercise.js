@@ -14,7 +14,7 @@
         ykeys: ['duration_in_min'],
         labels: ['Duration (min)'],
         xLabels: "day",
-        xLabelAngle: 60,
+        xLabelAngle: 40,
         xLabelFormat: function (x) {
             date_string = x.getFullYear() + "/" + parseInt(x.getMonth() + 1) + "/" + x.getDate();
             return date_string;

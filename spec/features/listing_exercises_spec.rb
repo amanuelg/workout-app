@@ -12,7 +12,7 @@ RSpec.feature "listing exercises" do
     scenario "listing exercises for the last 7 days" do
         visit "/"
         
-        click_link "My Launge"
+        click_link "My Lounge"
         expect(page).to have_content(@e1.duration_in_min)
         expect(page).to have_content(@e1.workout)
         expect(page).to have_content(@e1.workout_date)
