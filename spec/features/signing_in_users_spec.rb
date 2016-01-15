@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Signing In user" do
     
     before do
-        @jhon = User.create(:email => "jhon@example.com", :password => "password", :password_confirmation => "password")
+        @jhon = User.create(first_name: "John",last_name: "Doe",:email => "jhon@example.com", :password => "password", :password_confirmation => "password")
     end
     scenario "user sign in with valid credentials" do
         visit "/"
