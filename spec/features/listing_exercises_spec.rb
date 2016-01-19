@@ -6,8 +6,8 @@ RSpec.feature "listing exercises" do
         @sara = User.create!(first_name: "Sara",last_name: "Doe",email: "sara@example.com", password: "password")
         login_as(@jhon)
         
-        @e1 = @jhon.exercises.create!(:duration_in_min => 60, :workout => "lifting weight", :workout_date => "2016-01-12" )
-        @e2 = @jhon.exercises.create!(:duration_in_min => 60, :workout => "Running", :workout_date => "2016-01-11" )
+        @e1 = @jhon.exercises.create!(:duration_in_min => 60, :workout => "lifting weight", :workout_date => Date.today )
+        @e2 = @jhon.exercises.create!(:duration_in_min => 60, :workout => "Running", :workout_date => Date.today )
         
         @following = Friendship.create!(user: @jhon, friend: @sara)
     end
